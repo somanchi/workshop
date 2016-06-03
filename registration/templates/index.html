@@ -1,13 +1,14 @@
-<<!DOCTYPE html>
-add {% load staticfiles %}
+<!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"href="{%  static 'css/bootstrap.min.css' %}"
+<link rel="stylesheet" href="{%  static 'css/bootstrap.min.css' %}"
 <!-- Optional theme -->
 <link rel="stylesheet" href="{%  static 'css/bootstrap.min.css' %}"
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <head>
+    <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js'%}"></script>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,13 +30,9 @@ add {% load staticfiles %}
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#">login</a></li>
+              <li><a href="{% url 'register_user'%}">Signup</a></li>
+            <li><a href="#">sign up</a></li>
           </ul>
         </li>
       </ul>
@@ -46,27 +43,19 @@ add {% load staticfiles %}
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+        <li><a href="#">Link</a></l>
           </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-</div>
 </head>
 
 <body>
 
 
+<div 
 <section class="container">
     <div class="login">
       <h1>Login</h1>
@@ -83,7 +72,7 @@ add {% load staticfiles %}
       </form>
     </div>
 
-    <div class="login.txt"
+    <div class="login.txt">
       <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
     </div>
   </section>
@@ -95,8 +84,8 @@ add {% load staticfiles %}
     </p>
     <p class="about-author">
       &copy; 2012&ndash;2013 <a href="http://thibaut.me" target="_blank">Thibaut Courouble</a> -
-      <a href="http://www.cssflow.com/mit-license" target="_blank">amrita License</a><br>
-      Original PSD by <a href="http://www.premiumpixels.com/freebies/clean-simple-login-form-psd/" target="_blank">sai prasad</a>
+      <a href="http://www.cssflow.com/mit-license" target="_blank">sai licence</a><br>
+      created by <a href="http://www.premiumpixels.com/freebies/clean-simple-login-form-psd/" target="_blank">sai prasad</a>
   </section>
 
 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
