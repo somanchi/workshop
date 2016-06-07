@@ -13,28 +13,19 @@
 
 
 <body>
-<div class="container">
-
-<h1>{{ object.name }}</h1>
-    <table class="table table-striped">
-        <thead>
-        </thead>
-        <tbody>
-         <tr>
-            <td><p>manfacturer</p></td>
-            <td><p>{{ object.manfacture }}</p>
-            </td>
-        </tr>
-        <tr>
-            <td><p>description</p></td>
-            <td><p>{{ object.description }}</p></td>
-        </tr>
-         <tr>
-            <td><p>price</p></td>
-            <td><p>{{ object.price }}</p></td>
-        </tr>
-        </tbody>
+<div class="col-md-4 col-md-offset-4 well">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h1 class="panel-title"><i class="fa fa-bolt fa-3x" aria-hidden="true"></i> {{ object.name }}
+            </h1>
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover table-bordered table-responsive">
+                <tr>
+                    <th>Descripton:</th> <td>{{ object.description }}</td>
+                </tr><th>Price: </th><td>{{ object.price }}</td>          </table>
+        </div>
+        <div class="panel-footer">This chocolate is Manufatured by {{ object.manufacturer }}</div>
+    </div>
+    </div>
 </body>
-</html>
-
-

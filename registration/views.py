@@ -72,3 +72,9 @@ class UserProfileUpdateView(LoginRequiredMixin, CurrentUserMixin, UpdateView):
     success_url = '/register/user/success/'
 
 
+
+
+
+class UserProfileView(LoginRequiredMixin, CurrentUserMixin, DetailView):
+    template_name = 'user_detail.html'
+
